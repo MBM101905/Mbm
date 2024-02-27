@@ -1,0 +1,13 @@
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        int w = Integer.parseInt(jTextField1.getText());
+        int x = Integer.parseInt(jTextField2.getText());
+        int y = Integer.parseInt(jTextField3.getText());
+        int z = Integer.parseInt(jTextField4.getText());
+        
+        int ave = w + x + y + z;
+        int perc = ave / 4;
+        
+        jTextField5.setText(""+ String.valueOf(perc));
+        
+        JOptionPane.showMessageDialog(this, "Computed Successfully");
